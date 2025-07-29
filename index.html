@@ -106,8 +106,8 @@
     <!-- Login Box -->
     <div class="panel" id="loginBox">
       <h2>Login Database SC Telegram</h2>
-      <input type="text" id="username" placeholder="Username">
-      <input type="password" id="password" placeholder="Password">
+      <input type="text" id="Always" placeholder="Username">
+      <input type="password" id="2901" placeholder="Password">
       <button onclick="login()">MASUK</button>
     </div>
 
@@ -142,8 +142,8 @@
     let currentRole = null;
 
     async function login() {
-      const user = document.getElementById("always").value.trim();
-      const pass = document.getElementById("hanzz").value.trim();
+      const user = document.getElementById("user").value.trim();
+      const pass = document.getElementById("pass").value.trim();
       if (!user || !pass) return alert("Harap isi semua input.");
 
       for (let role in ROLE_FILES) {
